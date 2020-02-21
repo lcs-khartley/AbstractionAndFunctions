@@ -21,12 +21,17 @@ import Foundation
  
  */
 
+/// EEEEEEEEEEEEEE
+/// - Parameter radius: radius of the circle
+/// - Returns: area of the circle
 func areaOfCircle(radius: Double) -> Double {
     return Double.pi * pow(radius, 2.0)
 }
 
 // Actually invoke the function and find the area of a circle
 let someArea = areaOfCircle(radius: 11)
+
+print (someArea)
 /*:
  Now to add a documentation template, place your keyboard cursor anywhere on line 24 – the line the function definition starts on.
  

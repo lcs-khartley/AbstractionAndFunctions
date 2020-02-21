@@ -27,7 +27,63 @@ import Foundation
  */
 // Begin your work here...
 
+/// Find the perimeter of a circle
+// Perimeter of a circle
+func perimeterOfCircle (diameter: Double) -> Double {
+    return Double.pi * (diameter)
+}
 
+print ("The perimeter of the circle is " + String(format: "%.2f", perimeterOfCircle(diameter: 10.5)))
+
+
+// Perimeter of a parallelogram
+func perimeterOfParallelogram (base: Double, circumference: Double) -> Double {
+    return (2.0*(base+circumference))
+}
+
+print ("The perimeter of the parallelogram is " + String(format: "%.2f", perimeterOfParallelogram(base: 10.0, circumference: 20.0)))
+
+// Area of a triangle
+func areaOfTriangle (base: Double, height: Double) -> Double {
+    return (1/2*(base*height))
+}
+
+print ("The area of the triangle is " + String(format: "%.2f", areaOfTriangle(base: 5.0, height: 10.0)))
+
+// Area of a parallelogram
+func areaOfParallelogram (base: Double, height: Double) -> Double {
+    return (base*height)
+}
+
+print ("The area of the parallelogram is " + String(format: "%.2f", areaOfParallelogram(base: 5.5, height: 7.5)))
+
+// Surface area of a sphere
+func surfaceAreaOfSphere (radius: Double) -> Double {
+    return (4*Double.pi*(pow(radius, 2.0)))
+}
+
+print ("The surface area of the sphere is " + String(format: "%.2f", surfaceAreaOfSphere(radius: 5.8)))
+
+// Surface area of a cone
+func surfaceAreaOfCone (radius: Double, side: Double) -> Double {
+    return ((Double.pi*(pow(radius, 2.0)))+(Double.pi*radius*side))
+}
+
+print ("The surface area of the cone is " + String(format: "%.2f", surfaceAreaOfCone(radius: 3.5, side: 6.0)))
+
+// Volume of a triangular prism
+func volumeOfTrianglularPrism (height: Double, base: Double, length: Double) -> Double {
+    return (1/2*base*height*length)
+}
+
+print ("The volume of the triangular prism is " + String(format: "%.2f", volumeOfTrianglularPrism(height: 5.0, base: 7.2, length: 2.3)))
+
+// Volume of a cylinder
+func volumeOfCylinder (radius: Double, height: Double) -> Double {
+    return (Double.pi*(pow(radius, 2.0))*height)
+}
+
+print ("The volume of the cylinder is " + String(format: "%.2f", volumeOfCylinder(radius: 1.3, height: 7.6)))
 
 /*:
  [Previous: Writing Documentation](@previous) | Page 7
