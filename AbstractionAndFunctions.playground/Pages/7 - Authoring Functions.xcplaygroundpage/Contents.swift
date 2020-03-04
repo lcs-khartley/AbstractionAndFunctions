@@ -27,9 +27,21 @@ import Foundation
  */
 // Begin your work here...
 
+//// Guard
+//
+//guard length > 0, width > 0 else {
+//    // return a nil value
+//    return nil
+//}
+
+
 /// Find the perimeter of a circle
 // Perimeter of a circle
 func perimeterOfCircle (diameter: Double) -> Double {
+    guard length > 0, width > 0 else {
+        // return a nil value
+        return nil
+    }
     return Double.pi * (diameter)
 }
 
@@ -38,6 +50,10 @@ print ("The perimeter of the circle is " + String(format: "%.2f", perimeterOfCir
 
 // Perimeter of a parallelogram
 func perimeterOfParallelogram (base: Double, circumference: Double) -> Double {
+    guard length > 0, width > 0 else {
+           // return a nil value
+           return nil
+       }
     return (2.0*(base+circumference))
 }
 
@@ -45,6 +61,10 @@ print ("The perimeter of the parallelogram is " + String(format: "%.2f", perimet
 
 // Area of a triangle
 func areaOfTriangle (base: Double, height: Double) -> Double {
+    guard length > 0, width > 0 else {
+           // return a nil value
+           return nil
+       }
     return (1/2*(base*height))
 }
 
@@ -52,6 +72,10 @@ print ("The area of the triangle is " + String(format: "%.2f", areaOfTriangle(ba
 
 // Area of a parallelogram
 func areaOfParallelogram (base: Double, height: Double) -> Double {
+    guard length > 0, width > 0 else {
+           // return a nil value
+           return nil
+       }
     return (base*height)
 }
 
@@ -59,6 +83,10 @@ print ("The area of the parallelogram is " + String(format: "%.2f", areaOfParall
 
 // Surface area of a sphere
 func surfaceAreaOfSphere (radius: Double) -> Double {
+    guard length > 0, width > 0 else {
+           // return a nil value
+           return nil
+       }
     return (4*Double.pi*(pow(radius, 2.0)))
 }
 
@@ -66,6 +94,10 @@ print ("The surface area of the sphere is " + String(format: "%.2f", surfaceArea
 
 // Surface area of a cone
 func surfaceAreaOfCone (radius: Double, side: Double) -> Double {
+    guard length > 0, width > 0 else {
+           // return a nil value
+           return nil
+       }
     return ((Double.pi*(pow(radius, 2.0)))+(Double.pi*radius*side))
 }
 
@@ -73,6 +105,10 @@ print ("The surface area of the cone is " + String(format: "%.2f", surfaceAreaOf
 
 // Volume of a triangular prism
 func volumeOfTrianglularPrism (height: Double, base: Double, length: Double) -> Double {
+    guard length > 0, width > 0 else {
+           // return a nil value
+           return nil
+       }
     return (1/2*base*height*length)
 }
 
@@ -80,6 +116,10 @@ print ("The volume of the triangular prism is " + String(format: "%.2f", volumeO
 
 // Volume of a cylinder
 func volumeOfCylinder (radius: Double, height: Double) -> Double {
+    guard length > 0, width > 0 else {
+           // return a nil value
+           return nil
+       }
     return (Double.pi*(pow(radius, 2.0))*height)
 }
 
