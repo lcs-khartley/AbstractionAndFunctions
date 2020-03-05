@@ -45,6 +45,8 @@ func perimeterOfCircle (diameter: Double) -> Double {
     return Double.pi * (diameter)
 }
 
+
+
 print ("The perimeter of the circle is " + String(format: "%.2f", perimeterOfCircle(diameter: 10.5)))
 
 
@@ -56,6 +58,9 @@ func perimeterOfParallelogram (base: Double, circumference: Double) -> Double {
        }
     return (2.0*(base+circumference))
 }
+
+let testCircle = perimeterOfCircle(diameter: 0)
+let testParallelogram = perimeterOfCircle(diameter: 0)
 
 print ("The perimeter of the parallelogram is " + String(format: "%.2f", perimeterOfParallelogram(base: 10.0, circumference: 20.0)))
 
