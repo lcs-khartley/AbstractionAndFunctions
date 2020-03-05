@@ -38,7 +38,7 @@ import Foundation
 /// Find the perimeter of a circle
 // Perimeter of a circle
 func perimeterOfCircle (diameter: Double) -> Double {
-    guard length > 0, width > 0 else {
+    guard diameter > 0 else {
         // return a nil value
         return nil
     }
@@ -50,7 +50,7 @@ print ("The perimeter of the circle is " + String(format: "%.2f", perimeterOfCir
 
 // Perimeter of a parallelogram
 func perimeterOfParallelogram (base: Double, circumference: Double) -> Double {
-    guard length > 0, width > 0 else {
+    guard base > 0, circumference > 0 else {
            // return a nil value
            return nil
        }
@@ -61,7 +61,7 @@ print ("The perimeter of the parallelogram is " + String(format: "%.2f", perimet
 
 // Area of a triangle
 func areaOfTriangle (base: Double, height: Double) -> Double {
-    guard length > 0, width > 0 else {
+    guard base > 0, height > 0 else {
            // return a nil value
            return nil
        }
@@ -72,7 +72,7 @@ print ("The area of the triangle is " + String(format: "%.2f", areaOfTriangle(ba
 
 // Area of a parallelogram
 func areaOfParallelogram (base: Double, height: Double) -> Double {
-    guard length > 0, width > 0 else {
+    guard base > 0, height > 0 else {
            // return a nil value
            return nil
        }
@@ -83,7 +83,7 @@ print ("The area of the parallelogram is " + String(format: "%.2f", areaOfParall
 
 // Surface area of a sphere
 func surfaceAreaOfSphere (radius: Double) -> Double {
-    guard length > 0, width > 0 else {
+    guard radius > 0 else {
            // return a nil value
            return nil
        }
@@ -94,7 +94,7 @@ print ("The surface area of the sphere is " + String(format: "%.2f", surfaceArea
 
 // Surface area of a cone
 func surfaceAreaOfCone (radius: Double, side: Double) -> Double {
-    guard length > 0, width > 0 else {
+    guard radius > 0, side > 0 else {
            // return a nil value
            return nil
        }
@@ -105,7 +105,7 @@ print ("The surface area of the cone is " + String(format: "%.2f", surfaceAreaOf
 
 // Volume of a triangular prism
 func volumeOfTrianglularPrism (height: Double, base: Double, length: Double) -> Double {
-    guard length > 0, width > 0 else {
+    guard height > 0, base > 0, length > 0 else {
            // return a nil value
            return nil
        }
@@ -116,7 +116,7 @@ print ("The volume of the triangular prism is " + String(format: "%.2f", volumeO
 
 // Volume of a cylinder
 func volumeOfCylinder (radius: Double, height: Double) -> Double {
-    guard length > 0, width > 0 else {
+    guard radius > 0, height > 0 else {
            // return a nil value
            return nil
        }
